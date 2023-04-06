@@ -53,8 +53,10 @@ void AMyActor::OnContentReceived(FString& Content)
 ## Building from source
 * Clone the repository and `cd SimpleWebServer`
 * Double click on `ue-project\MyProject\MyProject.uproject` and choose `Yes` to build the project, the build will fail but it will create some directories
+
 ![UE Build](files/sws_7.PNG)
 ![UE Build Failed](files/sws_6.PNG)
+
 * Open VS project by clicking on `vs-project\SimpleWebServer\SimpleWebServer.sln`
 * Build solution for `Release`, this will create the following 2 files in `vs-project\SimpleWebServer\x64\Release`
 ** SimpleWebServer.dll
