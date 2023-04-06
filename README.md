@@ -50,15 +50,15 @@ void AMyActor::OnContentReceived(FString& Content)
 
 ![UE Console](files/sws_4.PNG)
 
-## Building from source
+## Building from source on Windows
 * Clone the repository and `cd SimpleWebServer-Plugin`
-* Double click on `ue-project\MyProject\MyProject.uproject` and choose `Yes` to build the project, the build will fail but it will create required directories
+* Double click on `ue-project\MyProject\MyProject.uproject` and choose `Yes` to build the project, it will take few minutes and the build will fail but it will create required directories.
 
 ![UE Build](files/sws_7.PNG)
 ![UE Build Failed](files/sws_6.PNG)
 
 * Open VS project by clicking on `vs-project\SimpleWebServer\SimpleWebServer.sln`
-* Build solution for `Release`, this will create the following 2 files in `vs-project\SimpleWebServer\x64\Release`
+* Build solution for `Release x64`, this will create the following 2 files in `vs-project\SimpleWebServer\x64\Release`
 ** SimpleWebServer.dll
 ** SimpleWebServer.lib
 * Copy those 2 files to `ue-project\MyProject\Plugins\SimpleWebServer\Source\ThirdParty\SimpleWebServerLibrary\Win64`
@@ -77,15 +77,15 @@ copy vs-project\SimpleWebServer\SimpleWebServer\sws.h ue-project\MyProject\Plugi
 ![Copy Files](files/sws_8.PNG)
 * Right click on `ue-project\MyProject\MyProject.uproject` and choose `Generate Visual Studio project files`, this will create `MyProject.sln`
 ![Copy Files](files/sws_9.PNG)
-* This should be enough to load the project in UE, try to double click on `ue-project\MyProject\MyProject.uproject`
-* Otherwise, open the solution `ue-project\MyProject\MyProject.sln` and rebuild from IDE
+* This should be enough to load the project in UE, try to double click on `ue-project\MyProject\MyProject.uproject` again.
+* Otherwise, open the solution `ue-project\MyProject\MyProject.sln` and rebuild from IDE.
 
 ## Resources
 * C++ project this plugin is built on
 [Simple-Web-Server](https://gitlab.com/eidheim/Simple-Web-Server)
 
 * Step-by-step video of building this plugin
-[YouTube](https://example.org)
+TODO [Video Guide](https://example.org)
 
 ## License
 This code is open source software licensed under the [GNU Lesser General Public License v3](http://www.gnu.org/licenses/lgpl-3.0.en.html).
