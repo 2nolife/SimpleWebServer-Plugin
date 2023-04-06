@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+.vs
+.ignore
+
+x64
+SimpleWebServer/x64
+SimpleWebServerTest/x64

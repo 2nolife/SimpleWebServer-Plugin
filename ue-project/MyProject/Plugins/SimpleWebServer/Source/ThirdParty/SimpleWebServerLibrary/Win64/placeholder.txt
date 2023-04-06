@@ -1,0 +1,3 @@
+Put plugin libraries here
+  SimpleWebServer.dll
+  SimpleWebServer.lib
