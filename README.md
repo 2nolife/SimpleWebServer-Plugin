@@ -17,7 +17,7 @@ The current plugin version is for Windows. But you can contribute with Linux or 
 
 ## Setup
 Provided your UE project name is `MyProject`
-* [Download the latest version](https://github.com/TODO) of the Plugin and unzip it
+* [Download the latest version](tree/main/bin) of the Plugin and unzip it
 * Copy/Paste `SimpleWebServer` plugin to your Plugins directory
 * Add "SimpleWebServer" to `MyProject.Build.cs`
 * Start the UE and create an Actor, then add `SimpleWebServer` to its components
