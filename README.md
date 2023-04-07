@@ -46,6 +46,7 @@ void AMyActor::OnContentReceived(FString& Content)
 
 ### Try it
 * Drag your Actor to the scene and hit Play
+* Post something to port 8080
 
 `curl -d "Say Hello!" -X POST http://localhost:8080`
 
