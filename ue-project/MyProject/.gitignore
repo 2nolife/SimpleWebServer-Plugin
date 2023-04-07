@@ -17,7 +17,8 @@ DerivedDataCache
 Intermediate
 Saved
 
-Plugins/SimpleWebServer/Binaries
+Plugins/SimpleWebServer/Binaries/Win64/*.dll
+Plugins/SimpleWebServer/Binaries/Win64/*.lib
 Plugins/SimpleWebServer/DerivedDataCache
 Plugins/SimpleWebServer/Intermediate
 Plugins/SimpleWebServer/Saved
