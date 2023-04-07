@@ -15,9 +15,9 @@ The current plugin version is for Windows. But you can contribute with Linux or 
 
 ![Diagram](files/sws_1.png)
 
-## Setup
+## Setup (no build required)
 Provided your UE project name is `MyProject`
-* Download the latest binary release of the Plugin and unzip it
+* Download the latest release of the Plugin and unzip it
 * Copy/Paste `SimpleWebServer` plugin to your Plugins directory
 * Add "SimpleWebServer" to `MyProject.Build.cs`
 * Start the UE and create an Actor, then add `SimpleWebServer` to its components
