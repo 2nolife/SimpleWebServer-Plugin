@@ -44,7 +44,7 @@ void AMyActor::OnContentReceived(FString& Content)
 
 ![Blueprint](files/sws_5.PNG)
 
-### Trying it out
+### Try it
 * Drag your Actor to the scene and hit Play
 
 `curl -d "Say Hello!" -X POST http://localhost:8080`
