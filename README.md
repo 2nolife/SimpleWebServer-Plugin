@@ -31,7 +31,7 @@ Provided your UE project name is `MyProject`
 AMyActor::AMyActor()
 {
   WebServerComponent = CreateDefaultSubobject<USimpleWebServerComponent>(TEXT("WebServer"));
-  WebServerComponent->OnWebServerContentReceived.AddUObject(this, &AReceiveEventActor::OnContentReceived);
+  WebServerComponent->OnWebServerContentReceived.AddDynamic(this, &AReceiveEventActor::OnContentReceived);
 }
 
 void AMyActor::OnContentReceived(FString& Content)
