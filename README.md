@@ -15,7 +15,7 @@ The current plugin version is for Windows. But you can contribute with Linux or 
 
 ![Diagram](files/sws_1.png)
 
-## Setup without building
+## Setup
 Provided your UE project name is `MyProject`
 * Download the latest release of the Plugin and unzip it
 * Copy/Paste `SimpleWebServer` plugin to your Plugins directory
