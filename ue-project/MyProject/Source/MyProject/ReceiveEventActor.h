@@ -31,7 +31,7 @@ private:
 	class USimpleWebServerComponent* WebServerComponent;
 	
 	UFUNCTION()
-	void OnContentReceived(FString Content);
+	void OnContentReceived(FString Path, FString Content);
 
 	FString ReceivedContent;
 };

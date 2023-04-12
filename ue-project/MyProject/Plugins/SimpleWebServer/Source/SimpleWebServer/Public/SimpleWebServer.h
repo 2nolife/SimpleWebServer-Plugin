@@ -10,7 +10,7 @@ THIRD_PARTY_INCLUDES_START
 	#include "ThirdParty/SimpleWebServerLibrary/include/sws.h"
 THIRD_PARTY_INCLUDES_END
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnWebServerPost, FString&);
+DECLARE_MULTICAST_DELEGATE_TwoParams(FOnWebServerPost, FString&, FString&);
 
 /** Callback to receive content from the web server.
  *  Throws an OnWebServerPost event with the content received.

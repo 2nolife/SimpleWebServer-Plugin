@@ -33,8 +33,8 @@ void USimpleWebServerComponent::EndPlay(const EEndPlayReason::Type EndPlayReason
 	Plugin->StopWebServer();
 }
 
-void USimpleWebServerComponent::OnContentReceived(FString& Content)
+void USimpleWebServerComponent::OnContentReceived(FString& Path, FString& Content)
 {
-	if (OnWebServerContentReceived.IsBound()) OnWebServerContentReceived.Broadcast(Content);
+	if (OnWebServerContentReceived.IsBound()) OnWebServerContentReceived.Broadcast(Path, Content);
 	else UE_LOG(LogTemp, Warning, TEXT("No listener for OnWebServerContentReceived event"));
 }

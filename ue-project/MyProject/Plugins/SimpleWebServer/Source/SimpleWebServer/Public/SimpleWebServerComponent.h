@@ -7,7 +7,7 @@
 #include "Components/ActorComponent.h"
 #include "SimpleWebServerComponent.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnWebServerContentReceived, FString, Content);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnWebServerContentReceived, FString, Path, FString, Content);
 
 /** Component to communicate with the web server.
  *  Throws an OnWebServerContentReceived event with the content received.
@@ -40,5 +40,5 @@ private:
 
 	/** Called by the web server when content is received */
 	UFUNCTION()
-	void OnContentReceived(FString& Content);
+	void OnContentReceived(FString& Path, FString& Content);
 };

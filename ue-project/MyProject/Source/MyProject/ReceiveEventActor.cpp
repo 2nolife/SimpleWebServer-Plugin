@@ -28,9 +28,9 @@ void AReceiveEventActor::Tick(float DeltaTime)
 
 }
 
-void AReceiveEventActor::OnContentReceived(FString Content)
+void AReceiveEventActor::OnContentReceived(FString Path, FString Content)
 {
-	UE_LOG(LogTemp, Warning, TEXT("CONTENT: %s"), *Content);
+	UE_LOG(LogTemp, Warning, TEXT("PATH: %s, CONTENT: %s"), *Path, *Content);
 
 	// Test the value can be assigned and used
 	ReceivedContent = Content;

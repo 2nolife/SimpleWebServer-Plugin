@@ -36,8 +36,9 @@ void FSimpleWebServerModule::ShutdownModule()
 
 void FSwsCallback::on_post(std::string& path, std::string& content)
 {
+	FString Path = FString::Printf(TEXT("%s"), UTF8_TO_TCHAR(path.c_str()));
 	FString Value = FString::Printf(TEXT("%s"), UTF8_TO_TCHAR(content.c_str()));
-	if (OnWebServerPost.IsBound()) OnWebServerPost.Broadcast(Value);
+	if (OnWebServerPost.IsBound()) OnWebServerPost.Broadcast(Path, Value);
 	else UE_LOG(LogTemp, Warning, TEXT("No listener for OnWebServerPost event"));
 }
 
