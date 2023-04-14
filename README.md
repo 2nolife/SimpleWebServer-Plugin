@@ -82,7 +82,9 @@ copy vs-project\SimpleWebServer\x64\Release\*.dll ue-project\MyProject\Plugins\S
 
 ## Resources
 * [Simple-Web-Server](https://gitlab.com/eidheim/Simple-Web-Server) repository of the C++ project this plugin is built on.
-* [Step-by-step video guide](https://youtube.com/playlist?list=PLINroPDqz3HnzazmXqrK3ZXrnaQLzdzfL) of building this plugin.
+* [Step-by-step video guide](https://youtube.com/playlist?list=PLINroPDqz3HnzazmXqrK3ZXrnaQLzdzfL) of building this plugin, also shows C++ and Blueprint setup in Chapter 8.
+
+[![Video Guide](https://img.youtube.com/vi/PMHrxVT8iH8/0.jpg)](https://youtube.com/playlist?list=PLINroPDqz3HnzazmXqrK3ZXrnaQLzdzfL)
 
 ## License
 This code is open source software licensed under the [GNU Lesser General Public License v3](http://www.gnu.org/licenses/lgpl-3.0.en.html).
